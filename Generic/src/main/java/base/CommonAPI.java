@@ -11,12 +11,13 @@ import org.testng.annotations.Parameters;
 import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
-    public WebDriver driver = null;
+    public static WebDriver driver = null;
 
     @Parameters({"url"})
     @BeforeMethod
     public void setUP(String url){
-        System.setProperty("webdriver.chrome.driver", "/Users/peoplentech/develop/automation/Web-Automation-Framework/Generic/browser-driver/chromedriver");        driver = new ChromeDriver();
+        System.setProperty("webdriver.chrome.driver", "/Users/peoplentech/develop/automation/Web-Automation-Framework/Generic/browser-driver/chromedriver");
+        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.navigate().to(url);
     }

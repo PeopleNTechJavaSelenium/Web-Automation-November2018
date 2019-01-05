@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 18.713 s <<< FAILURE! - in TestSuite
+test1(TestHome)  Time elapsed: 7.722 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:7472
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PeopleNTechs-iMac.local', ip: '10.11.11.198', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.1', java.version: '1.8.0_151'
+Driver info: driver.version: RemoteWebDriver
+	at TestHome.test1(TestHome.java:10)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:7472
+	at TestHome.test1(TestHome.java:10)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at TestHome.test1(TestHome.java:10)
+
+cleanUP(TestHome)  Time elapsed: 7.724 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:7472
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PeopleNTechs-iMac.local', ip: '10.11.11.198', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.1', java.version: '1.8.0_151'
+Driver info: driver.version: RemoteWebDriver
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:7472
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+

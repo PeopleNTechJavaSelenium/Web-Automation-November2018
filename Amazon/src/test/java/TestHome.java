@@ -1,9 +1,7 @@
-import base.CommonAPI;
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-import search.SearchPage;
+import test.search.page.SearchFeature;
 
-public class TestHome extends SearchPage {
+public class TestHome extends SearchFeature {
 
     @Test
     public void test1(){

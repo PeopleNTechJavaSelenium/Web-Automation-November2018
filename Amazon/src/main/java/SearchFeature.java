@@ -1,8 +1,8 @@
-package search;
 
 import base.CommonAPI;
+import org.openqa.selenium.By;
 
-public class SearchPage extends CommonAPI{
+public class SearchFeature extends CommonAPI{
 
     public void searchMenu(){
         typeOnElementNEnter("#twotabsearchtextbox","books");

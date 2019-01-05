@@ -11,9 +11,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Amazon" target="1.5" />
-      <module name="Generic" target="1.5" />
-      <module name="Web-Automation-Nov2018" target="1.5" />
+      <module name="Amazon" target="1.8" />
+      <module name="Generic" target="1.8" />
+      <module name="Web-Automation-Nov2018" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
