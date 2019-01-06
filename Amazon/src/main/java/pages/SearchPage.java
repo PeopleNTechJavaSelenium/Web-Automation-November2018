@@ -2,6 +2,8 @@ package pages;
 
 
 import base.CommonAPI;
+;
+import datasource.DatabaseOperation;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -9,8 +11,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 import java.io.IOException;
-import java.util.ArrayList;
+import java.sql.SQLException;
 import java.util.List;
+
+import static datasource.DatabaseOperation.getItemValue;
 
 public class SearchPage {
     @FindBy(how = How.CSS, using ="#twotabsearchtextbox")
@@ -36,12 +40,23 @@ public class SearchPage {
     public void clearInput(){
         getSearchInputWebElement().clear();
     }
-    public void searchItemsAndSubmitButton()throws IOException {
-        List<String> list = getItemValue();
+    public void searchItemsAndSubmitButton()throws Exception, IOException, SQLException, ClassNotFoundException  {
+        DatabaseOperation databaseOperation = new DatabaseOperation();
+        List<String> list = databaseOperation.getItemsListFromDB();
         for(int i=0; i<list.size(); i++) {
             searchFor(list.get(i));
             submitSearchButton();
-            //validate books data
+            clearInput();
+        }
+    }
+
+    public void searchItemsAndSubmitButtonFromExcelFile()throws Exception, IOException, SQLException, ClassNotFoundException  {
+         // ToDo
+        //Read data from Excel file using Apache POI
+        List<String> list = null;
+        for(int i=0; i<list.size(); i++) {
+            searchFor(list.get(i));
+            submitSearchButton();
             clearInput();
         }
     }
@@ -62,17 +77,4 @@ public class SearchPage {
         }
     }
 
-    public List<String> getItemValue(){
-        List<String> itemsList = new ArrayList<String>();
-        itemsList.add("Java Book");
-        itemsList.add("Selenium Book");
-        itemsList.add("Laptop");
-        itemsList.add("Honey");
-        itemsList.add("Toothpaste");
-        itemsList.add("ear-ring");
-        itemsList.add("ps4games");
-        itemsList.add("macAir");
-
-        return itemsList;
-    }
 }

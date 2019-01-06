@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
-
+import org.apache.commons.lang3.StringUtils;
 import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
@@ -16,7 +16,7 @@ public class CommonAPI {
     @Parameters({"url"})
     @BeforeMethod
     public void setUP(String url){
-        System.setProperty("webdriver.chrome.driver", "/Users/peoplentech/develop/automation/Web-Automation-Framework/Generic/browser-driver/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/mrahman/develop/pnt/Web-Automation-November2018/Generic/browser-driver/chromedriver");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.navigate().to(url);
@@ -77,5 +77,11 @@ public class CommonAPI {
 
     public void navigateBack(){
         driver.navigate().back();
+    }
+
+    public static String convertToString(String st){
+        String splitString ;
+        splitString = StringUtils.join(StringUtils.splitByCharacterTypeCamelCase(st), ' ');
+        return splitString;
     }
 }
