@@ -1,6 +1,8 @@
 package datasource;
 
+import base.CommonAPI;
 import databases.ConnectToSqlDB;
+import reporting.TestLogger;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -12,12 +14,13 @@ public class DatabaseOperation {
     static ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
 
     public static void insertDataIntoDB(){
-        List<String> list = getItemValue();
+        //List<String> list = getItemValue();
         connectToSqlDB = new ConnectToSqlDB();
-        connectToSqlDB.insertStringDataFromArrayListToSqlTable(list,"ItemList","items");
+        //connectToSqlDB.insertStringDataFromArrayListToSqlTable(list,"ItemList","items");
     }
 
-    public static List<String> getItemValue(){
+    public List<String> getItemValue(){
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         List<String> itemsList = new ArrayList<String>();
         itemsList.add("Java Book");
         itemsList.add("Selenium Book");
