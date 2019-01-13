@@ -13,8 +13,9 @@
 
     <test name = "Amazon Home">
         <classes>
-            <class name="TestHome"/>
-            <class name="test.search.TestSearch"/>
+            <!--<class name="TestHome"/>-->
+            <!--<class name="test.search.TestSearch"/>-->
+            <class name="dropdown.TestDropDown"/>
         </classes>
     </test>
 
