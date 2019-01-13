@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58d7f52c-2670-4883-9ea9-bfccd6c30030" name="Default" comment="" />
+    <list default="true" id="58d7f52c-2670-4883-9ea9-bfccd6c30030" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/Generic/target/" />
@@ -19,8 +21,8 @@
       <file leaf-file-name="TestHome.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/TestHome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="68" />
+            <state relative-caret-position="239">
+              <caret line="11" column="84" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -171,7 +173,6 @@
         <option value="$PROJECT_DIR$/Amazon/src/main/java/pages/SearchPage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Generic/pom.xml" />
-        <option value="$PROJECT_DIR$/Amazon/src/test/java/TestHome.java" />
         <option value="$PROJECT_DIR$/Amazon/src/main/java/SearchFeature.java" />
         <option value="$PROJECT_DIR$/W3Schools/pom.xml" />
         <option value="$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java" />
@@ -180,6 +181,7 @@
         <option value="$PROJECT_DIR$/Amazon/src/test/resources/AmazonTestRunner.xml" />
         <option value="$PROJECT_DIR$/Amazon/src/test/java/dropdown/TestDropDown.java" />
         <option value="$PROJECT_DIR$/Amazon/src/main/java/dropdownmenu/FetchDropDown.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/java/TestHome.java" />
       </list>
     </option>
   </component>
@@ -269,14 +271,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-Automation-Nov2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-Automation-Nov2018" type="462c0819:PsiDirectoryNode" />
-              <item name="Amazon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1054,8 +1048,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/TestHome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="68" />
+        <state relative-caret-position="239">
+          <caret line="11" column="84" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
