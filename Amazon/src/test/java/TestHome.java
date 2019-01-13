@@ -9,6 +9,6 @@ public class TestHome extends SearchFeature {
         TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         searchMenu();
-        System.out.println("Hi, i am potential git merge conflict. let try it now");
+        System.out.println("Hi, i am potential git merge conflict.I will try to resolve it");
     }
 }
