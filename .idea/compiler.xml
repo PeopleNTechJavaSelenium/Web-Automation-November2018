@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Amazon" />
         <module name="Generic" />
+        <module name="RestAPI" />
         <module name="W3Schools" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Amazon" target="1.8" />
       <module name="Generic" target="1.8" />
+      <module name="RestAPI" target="1.8" />
       <module name="W3Schools" target="1.8" />
       <module name="Web-Automation-Nov2018" target="1.8" />
     </bytecodeTargetLevel>
